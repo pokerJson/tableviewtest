@@ -1,0 +1,22 @@
+PODS:
+  - SnapKit (5.0.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - SnapKit
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - YYKit
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: e0c478e22c3aca10c49d4dff4a1dde1082a75e26
+
+COCOAPODS: 1.10.0
