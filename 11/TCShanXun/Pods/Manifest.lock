@@ -1,0 +1,30 @@
+PODS:
+  - LTScrollView (0.1.9)
+  - MJRefresh (3.1.14.1)
+  - SDAutoLayout (2.1.9)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - LTScrollView (~> 0.1.7)
+  - MJRefresh (~> 3.1.14.1)
+  - SDAutoLayout (~> 2.1.3)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LTScrollView
+    - MJRefresh
+    - SDAutoLayout
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  LTScrollView: f2e17b5bc4b89f3aa59562a81fa10add77a8b8bf
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 26f6093fb1829e09f5a783cb46c65047faf17137
+
+COCOAPODS: 1.5.3

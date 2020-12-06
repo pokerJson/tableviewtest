@@ -1,0 +1,144 @@
+//
+//  PrefixHeader.pch
+//  TCShanXun
+//
+//  Created by FANTEXIX on 2018/7/25.
+//  Copyright © 2018年 fantexix Inc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef  DEBUG
+#define MLog(fmt, ...)  {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#define NSLog(...)      {NSLog(__VA_ARGS__);}
+#else
+#define MLog(...)       {}
+#define NSLog(...)      {}
+#endif
+
+
+#define kSysVersion     [[[UIDevice currentDevice] systemVersion] doubleValue]
+
+#define IS_IPHONE_X     ((kScreenHeight == 812. || kScreenHeight == 896.) ? YES : NO)
+
+#define kStatusHeight   (([UIApplication sharedApplication].isStatusBarHidden) ? 0. : ((IS_IPHONE_X) ? 44. : 20.))
+#define kTabBarHeight   ((IS_IPHONE_X) ? 83. : 49.)
+#define kTopInsets      ((IS_IPHONE_X) ? 44. : 0.)
+#define kBottomInsets   ((IS_IPHONE_X) ? 34. : 0.)
+
+
+#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+#define kWidth          self.view.bounds.size.width
+#define kHeight         self.view.bounds.size.height
+
+#define sWidth          self.bounds.size.width
+#define sHeight         self.bounds.size.height
+
+#define kHalf(a)        ((a)/2.0)
+
+#define weakObj(o)      __weak    typeof(o) o##Weak = o;
+#define strongObj(o)    __strong  typeof(o) o = o##Weak;
+
+#define UIFontSys(s)                [UIFont systemFontOfSize:s]
+#define UIFontBSys(s)               [UIFont boldSystemFontOfSize:s];
+#define UIFontNameSize(name,s)      [UIFont fontWithName:name size:s];
+
+#define UIImageNamed(s)             [UIImage imageNamed:s]
+#define UIImageResize(image,w,h)    [UIImage resizeImage:[UIImage imageNamed:image] size:CGSizeMake(w,h)]
+
+#define RGBColor(r, g, b)           [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBAColor(r, g, b, a)       [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define RandomColor                 RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define UIColorRGB(c)               [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
+
+
+#import "Interface.h"
+
+#import "AppDelegate.h"
+#import "MainTabBarController.h"
+#import "BNavigationController.h"
+#import "LoginViewController.h"
+#import "ReAndLoViewController.h"
+
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UIView+Frame.h"
+#import "Reachability.h"
+#import "HttpRequest.h"
+#import "MSTimer.h"
+#import "TTableView.h"
+#import "SAMKeychain.h"
+#import "XFileManager.h"
+#import "UIView+Extend.h"
+#import "NSString+Extend.h"
+#import "UIButton+Extend.h"
+#import "UIImage+Extend.h"
+
+#import <UMCommon/UMCommon.h>
+#import <UMShare/UMShare.h>
+#import <UMAnalytics/MobClick.h>
+#import <UMPush/UMessage.h>
+
+#import "ShareView.h"
+#import "UMengShare.h"
+#import <MJRefresh/MJRefresh.h>
+#import "YYFPSLabel.h"
+#import "BListModel.h"
+#import "TopicModel.h"
+#import "PersonModel.h"
+#import "PicPreView.h"
+#import "AppDelegate.h"
+#import "MSTimer.h"
+#import "XFileManager.h"
+#import "SAMKeychain.h"
+#import "SysInfo.h"
+#import "UserInfo.h"
+#import "UserManager.h"
+#import "MJNewsFooter.h"
+#import "YYWebImage.h"
+#import "SectorProgressView.h"
+#import "KKHUD.h"
+#import "UserActionReport.h"
+#import "UIViewController+Extend.h"
+#import "UITextView+Placeholder.h"
+#import "MorePopView.h"
+#import "DataTipsView.h"
+#import "UITabBar+RedDot.h"
+
+#define KAPPID        @"1363070218"
+
+
+
+#define UMAppKey       @"5b4713c8f43e482f94000022"     //友盟appKey
+
+//qq
+//APP ID:1107040124
+//APP KEY:QaWrc0kQ0XW6A816
+#define QQAPPKEY            @"1107040124"
+#define QQAPPSECRET         @"QaWrc0kQ0XW6A816"
+
+//weix
+//AppID:wx4144973a7d755b30
+//secret:5e00e514a7684e4d7326b79625b98a99
+#define WXAPPKEY            @"wx4144973a7d755b30"
+#define WXAPPSECRET         @"5e00e514a7684e4d7326b79625b98a99"
+
+//sina
+//AppID:668878178
+//secret:d9ea3186e4634bf92d6a8aa8a3eeb3c5
+//redirectURL:@"http://www.yzpai.cn"
+#define SINAAPPKEY            @"668878178"
+#define SINAAPPSECRET         @"d9ea3186e4634bf92d6a8aa8a3eeb3c5"
+#define SINAREDIRECTURL       @"http://www.yzpai.cn"
+
+
+
+
+#endif /* PrefixHeader_pch */
