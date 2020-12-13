@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         let header = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as! HeaderView
         return header
     }()
+    lazy var input: InputView = {
+        let header = InputView()
+        return header
+    }()
+
     lazy var tabView: UITableView = {
         let tab = UITableView(frame: .zero, style: .plain)
         tab.delegate = self
@@ -99,6 +104,57 @@ class ViewController: UIViewController {
         arr.append(okmodel6)
         arr.append(okmodel7)
         tabView.reloadData()
+
+//        NotificationCenter.default.addObserver(self, selector: #selector(kbFrameChanged(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(kbFrameChanged2(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        view.addSubview(input)
+        input.handle = {
+            self.input.snp.updateConstraints { (make) in
+                make.top.equalToSuperview().offset(kScreen_height - 80)
+                make.left.right.equalToSuperview()
+                make.height.equalTo(80)
+            }
+        }
+        input.handle2 = {
+            self.input.snp.updateConstraints { (make) in
+                make.top.equalToSuperview().offset(kScreen_height - 60)
+                make.left.right.equalToSuperview()
+                make.height.equalTo(60)
+            }
+        }
+
+        input.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(kScreen_height - 60)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(60)
+        }
+    }
+//    @objc func kbFrameChanged(_ notification : Notification){
+//        let info = notification.userInfo
+//        let kbRect = (info?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+//        let offsetY = kbRect.origin.y - UIScreen.main.bounds.height
+//        UIView.animate(withDuration: 0.25) {
+//            self.input.transform = CGAffineTransform(translationX: 0, y: offsetY)
+//        }
+//    }
+//    @objc func kbFrameChanged2(_ notification : Notification){
+//        let info = notification.userInfo
+//        let kbRect = (info?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+//        let offsetY = kbRect.origin.y - UIScreen.main.bounds.height
+//        UIView.animate(withDuration: 0.25) {
+//            self.input.transform = CGAffineTransform(translationX: 0, y: offsetY)
+//        }
+//    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        input.txtView.resignFirstResponder()
+        input.txtView.text = ""
+        self.input.snp.updateConstraints { (make) in
+            make.top.equalToSuperview().offset(kScreen_height - 60)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(60)
+        }
 
     }
     func getHeight(str: String) -> CGFloat {
