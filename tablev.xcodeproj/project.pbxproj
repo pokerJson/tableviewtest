@@ -28,6 +28,8 @@
 		3A13FF62257BF52100371FBF /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A13FF61257BF52100371FBF /* MyCell.xib */; };
 		3A2BE322257D026D00A5E74D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE321257D026D00A5E74D /* TableViewCell.swift */; };
 		3A2BE3302585B38000A5E74D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE32F2585B38000A5E74D /* InputView.swift */; };
+		3A2BE3332585C12400A5E74D /* CooletionviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE3322585C12400A5E74D /* CooletionviewVC.swift */; };
+		3A2BE3362585C1D200A5E74D /* Mylayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE3352585C1D200A5E74D /* Mylayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		3A13FF61257BF52100371FBF /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		3A2BE321257D026D00A5E74D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A2BE32F2585B38000A5E74D /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		3A2BE3322585C12400A5E74D /* CooletionviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooletionviewVC.swift; sourceTree = "<group>"; };
+		3A2BE3352585C1D200A5E74D /* Mylayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mylayout.swift; sourceTree = "<group>"; };
 		BDFF70F6042EB86C285111EE /* Pods_tablev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tablev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DAAFA7C2828B8FBB47E7A8 /* Pods-tablev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tablev.release.xcconfig"; path = "Target Support Files/Pods-tablev/Pods-tablev.release.xcconfig"; sourceTree = "<group>"; };
 		F7E59371405858D6D579D0DF /* Pods-tablev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tablev.debug.xcconfig"; path = "Target Support Files/Pods-tablev/Pods-tablev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				3A13FF0D257BB94000371FBF /* AppDelegate.swift */,
 				3A13FF0F257BB94000371FBF /* SceneDelegate.swift */,
 				3A13FF11257BB94000371FBF /* ViewController.swift */,
+				3A2BE3322585C12400A5E74D /* CooletionviewVC.swift */,
+				3A2BE3352585C1D200A5E74D /* Mylayout.swift */,
 				3A2BE32F2585B38000A5E74D /* InputView.swift */,
 				3A2BE321257D026D00A5E74D /* TableViewCell.swift */,
 				3A13FF5B257BF18600371FBF /* MyCell.swift */,
@@ -258,8 +264,10 @@
 			files = (
 				3A13FF12257BB94000371FBF /* ViewController.swift in Sources */,
 				3A13FF0E257BB94000371FBF /* AppDelegate.swift in Sources */,
+				3A2BE3332585C12400A5E74D /* CooletionviewVC.swift in Sources */,
 				3A13FF10257BB94000371FBF /* SceneDelegate.swift in Sources */,
 				3A13FF5D257BF18600371FBF /* MyCell.swift in Sources */,
+				3A2BE3362585C1D200A5E74D /* Mylayout.swift in Sources */,
 				3A13FF2C257BC29600371FBF /* NibLoadable.swift in Sources */,
 				3A2BE3302585B38000A5E74D /* InputView.swift in Sources */,
 				3A2BE322257D026D00A5E74D /* TableViewCell.swift in Sources */,

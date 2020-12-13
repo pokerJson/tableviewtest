@@ -177,4 +177,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         cell.fillData(model: (arr[indexPath.row]))
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let aa = CooletionviewVC()
+        self.present(aa, animated: true) {
+            
+        }
+        
+    }
 }
