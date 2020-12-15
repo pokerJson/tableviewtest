@@ -30,6 +30,7 @@
 		3A2BE3302585B38000A5E74D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE32F2585B38000A5E74D /* InputView.swift */; };
 		3A2BE3332585C12400A5E74D /* CooletionviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE3322585C12400A5E74D /* CooletionviewVC.swift */; };
 		3A2BE3362585C1D200A5E74D /* Mylayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BE3352585C1D200A5E74D /* Mylayout.swift */; };
+		E09B43B6258840550097CC63 /* 禅道任务邸振超.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = E09B43B5258840550097CC63 /* 禅道任务邸振超.xlsx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3A2BE3322585C12400A5E74D /* CooletionviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooletionviewVC.swift; sourceTree = "<group>"; };
 		3A2BE3352585C1D200A5E74D /* Mylayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mylayout.swift; sourceTree = "<group>"; };
 		BDFF70F6042EB86C285111EE /* Pods_tablev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tablev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09B43B5258840550097CC63 /* 禅道任务邸振超.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "禅道任务邸振超.xlsx"; sourceTree = "<group>"; };
 		E0DAAFA7C2828B8FBB47E7A8 /* Pods-tablev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tablev.release.xcconfig"; path = "Target Support Files/Pods-tablev/Pods-tablev.release.xcconfig"; sourceTree = "<group>"; };
 		F7E59371405858D6D579D0DF /* Pods-tablev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tablev.debug.xcconfig"; path = "Target Support Files/Pods-tablev/Pods-tablev.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 		3A13FF01257BB94000371FBF = {
 			isa = PBXGroup;
 			children = (
+				E09B43B5258840550097CC63 /* 禅道任务邸振超.xlsx */,
 				3A13FF0C257BB94000371FBF /* tablev */,
 				3A13FF0B257BB94000371FBF /* Products */,
 				A4203D05F2D1A362A705017B /* Pods */,
@@ -210,6 +213,7 @@
 				3A13FF29257BBB0500371FBF /* HeaderView.xib in Resources */,
 				3A13FF3B257BC7A100371FBF /* 6.png in Resources */,
 				3A13FF3D257BC7A100371FBF /* 1.png in Resources */,
+				E09B43B6258840550097CC63 /* 禅道任务邸振超.xlsx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
