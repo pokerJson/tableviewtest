@@ -52,7 +52,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    alias rewriteoc='clang -x objective-c -rewrite-objc -isysroot /Users/phjtytj-0003/Desktop/Xcode\ 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk'
 //    # HomeBrew END
 
-    
+    /*
+    dizhenchao@blhcn.com  Dzc123456
+    开机 0003
+    OA  密码：    Ph123456
+
+    git 账号：dizhenchao 密码：dizhenchao@123
+    禅道 http://10.1.1.19/zentao/project-task-670.html
+    禅道 账号：dizhenchao 密码：cyax160527
+    蓝湖 账号dizhenchao@blhcn.com 密码 DZC2xinxin
+
+    友盟账号：peogoo社群营销组
+           密码：peogoo2019
+
+
+
+
+    com.peogoo.DiscipleGroupDG
+
+    com.phjt.ThreePersonEducation
+
+    内购测试账号
+    dizhenchao@blncn.com  Puhua123
+    puhua66@126.com Puhua123
+    P7h8j#T1h
+    Office密码 Ph123456
+
+    恋上数据结构与算法 第一季
+    链接：https://pan.baidu.com/s/1pTZ5uCtCUNF_zvKoXhgIlw
+    提取码：mxkh
+
+    恋上数据结构与算法 第二季
+    链接：https://pan.baidu.com/s/14mhIgfQPwNSTKjRFAx7I5A
+    提取码：5ix0
+
+    恋上数据结构与算法 第三季
+    链接：https://pan.baidu.com/s/1EXPeQpuADq1fWGpf1ykM1w
+    提取码：dezx
+    */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
