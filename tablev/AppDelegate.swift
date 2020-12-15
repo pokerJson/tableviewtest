@@ -31,6 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    https://www.bilibili.com/video/BV1gi4y1x7YS?p=43
 //    https://www.cnblogs.com/zhangxiaoxu/p/12069410.html
 //    https://www.jianshu.com/p/4e79e9a0dd82
+//    https://juejin.cn/user/852876756006792/posts
+//    https://www.jianshu.com/p/98c2655c8037
+//    https://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=400417748&idx=1&sn=0c5f6747dd192c5a0eea32bb4650c160&scene=4#wechat_redirect
+//    https://www.jianshu.com/p/1f56c3d78b52
+//    https://www.jianshu.com/p/e0277ac633bc
+//    https://www.jianshu.com/u/24d715499bcf
     
 //    export PATH=/usr/local/bin:$PATH
 //    export PUB_HOSTED_URL=https://pub.flutter-io.cn
